@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
+import Back from './Back';
+import Lockovitch from './projects/writing/Lockovitch';
+import Outreach from './projects/writing/Outreach';
+import NickDigital from './projects/writing/NickDigital';
 
 export default class Writing extends Component {
   render(){
     return(
       <div>
-        <h1>
-          Writing
-        </h1>
+        <div>
+          <Back/>
+          <div className="writing">
+            <Lockovitch/>
+            <Outreach/>
+            <NickDigital/>
+          </div>
+        </div>
       </div>
     )
   }
