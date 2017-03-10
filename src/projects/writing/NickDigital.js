@@ -68,7 +68,7 @@ export default class NickDigital extends Component {
   }
   render() {
     return(
-      <div id="nick">
+      <div className="work">
         <p onClick={ () => this.toggleShow() }>
           Nick.com Sketches.
         </p>

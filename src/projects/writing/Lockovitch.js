@@ -10,7 +10,7 @@ export default class extends Component {
   }
   render() {
     return(
-      <div id="lockovitch">
+      <div className="work">
         <p onClick={ () => this.toggleShow() }>
           Erin Lockovitch.
         </p>
@@ -19,8 +19,8 @@ export default class extends Component {
             <div>
               <p>
                 <a href="https://vimeo.com/193212724">
-                  A documentary about one man's journey to being stuck inside his inlaws' bathroom<br/>
-                  for an hour, and his discovery that the real bathroom is inside each of our hearts.
+                  One man's journey being stuck inside his inlaws' bathroom
+                  for an hour,<br/> and his discovery that the real bathroom is inside each of our hearts.
                 </a>
               </p>
               <iframe

@@ -11,9 +11,10 @@ export default class Writing extends Component {
         <div>
           <Back/>
           <div className="writing">
-            <Lockovitch/>
-            <Outreach/>
-            <NickDigital/>
+            <p>Recent work:</p>
+            <p><Lockovitch/></p>
+            <p><Outreach/></p>
+            <p><NickDigital/></p>
           </div>
         </div>
       </div>

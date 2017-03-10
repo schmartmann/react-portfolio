@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 export default class Back extends Component {
   render(){
     return(
-      <div>
+      <div className="back">
         <ul>
           <li><Link to="/">Back.</Link></li>
         </ul>

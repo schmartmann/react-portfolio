@@ -51,7 +51,7 @@ class Episode extends Component {
     return (
       <div>
         <p onClick={ () => this.toggleShow() }>
-            { this.props.episode.title }
+          { this.props.episode.title }
           { this.state.show? (
             <a href={ this.props.episode.directLink }>
               <iframe src={ this.props.episode.iframeLink }
@@ -90,7 +90,7 @@ export default class Outreach extends Component {
   }
   render() {
     return(
-      <div id="outeach">
+      <div className="work">
         <p onClick={() => this.toggleList()}>
           The Outreach.
         </p>

@@ -97,6 +97,30 @@ body {
   color: black;
 }
 
+/* Back button component*/
+
+.back {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.back ul li {
+  list-style: none;
+  margin-left: -50%;
+}
+
+.back ul li a:visited,
+.back ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.back ul li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 /* Code component styling */
 
 .projects,
@@ -122,25 +146,38 @@ body {
   max-width: 50%;
 }
 
-.example-enter {
-  opacity: 0.01;
+/* Writing component */
+
+.writing {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
+.writing div p:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.example-leave {
-  opacity: 1;
+.writing .work,
+.writing .work div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+.writing .work div p {
+  width: 40%;
+  position: relative;
+  left: -4%;
 }
 
-
+.writing .work div p a {
+  text-decoration: none;
+  color: black;
+}
 
 /* animation */
 
