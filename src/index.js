@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory, IndexRoute } from 'react-router'
-import cookie from 'react-cookie';
 
 import App from './App';
 import Writing from './Writing';

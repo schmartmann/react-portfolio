@@ -5,12 +5,32 @@ export default class Home extends Component {
   render() {
     return(
       <div>
-        <ul role="nav">
-          <li><Link to="/writing">Writing</Link></li>
-          <li><Link to="/code">Code</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/resume">Resume</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+        <ul id="nav">
+          <div>
+            <Link to="/writing">
+              <li>Writing</li>
+            </Link>
+          </div>
+          <div>
+            <Link to="/code">
+              <li>Code</li>
+            </Link>
+          </div>
+          <div>
+            <Link to="/about">
+              <li>About</li>
+            </Link>
+          </div>
+          <div>
+            <Link to="/resume">
+              <li>Resume</li>
+            </Link>
+          </div>
+          <div>
+              <Link to="/contact">
+                <li>Contact</li>
+              </Link>
+          </div>
         </ul>
       </div>
     )

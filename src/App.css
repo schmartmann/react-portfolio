@@ -1,24 +1,158 @@
-.App {
+body {
+  font-family: 'Alegreya', serif;
+  background: #349884;
+}
+/* splash and home styling */
+
+#splash {
+  width: 48%;
+  height: 100%;
+  margin: 10% auto;
+  color: white;
+  font-size: 26px;
+  font-weight: 800;
+  border: 2px solid black;
+  text-shadow: 2px 2px black;
+  position: relative;
+  z-index: 1;
+}
+
+#splash::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: -1;
+  background: url('../public/img/plaguedoc.png');
+  background-position: 10% auto;
+  min-width: 2em;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#splash p {
+  margin: 12% auto;
+}
+
+#splash,
+#home {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#home #nav {
+  list-style: none;
+  text-transform: uppercase;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#home #nav div {
+  margin: 20% auto;
+  border: 1px solid;
+  width: 15em;
+  height: 15em;
+  align-content: center;
+  position: relative;
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#home #nav div::before {
+  content: '';
+  background: url('../public/img/trepanning.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.App-intro {
-  font-size: large;
+#home #nav a:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#home #nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#home #nav a li {
+  position: absolute;
+  text-align: center;
+  font-size: 46px;
+  top: 40%;
+  left: 5%;
+  text-shadow: 2px 2px white;
+}
+
+#home #nav a:visited {
+  color: black;
+}
+
+/* Code component styling */
+
+.projects,
+.projects .project,
+.projects .project span,
+.projects .project div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.projects .project a {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.projects .project a > div > img {
+  max-width: 50%;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+
+
+/* animation */
+
+.loader {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  animation: spin 1.25s linear infinite;
+}
+
+@keyframes spin{
+  100% {
+    transform:rotate(-360deg);
+  }
 }
