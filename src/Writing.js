@@ -6,15 +6,16 @@ import NickDigital from './projects/writing/NickDigital';
 
 export default class Writing extends Component {
   render(){
+    const iframeSize = {height: '100%', width: '100%'}
     return(
       <div>
         <div>
           <Back/>
           <div className="writing">
             <p>Recent work:</p>
-            <p><Lockovitch/></p>
-            <p><Outreach/></p>
-            <p><NickDigital/></p>
+            <p><Lockovitch iframeSize={ iframeSize } /></p>
+            <p><Outreach iframeSize={ iframeSize } /></p>
+            <p><NickDigital iframeSize={ iframeSize } /></p>
           </div>
         </div>
       </div>

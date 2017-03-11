@@ -28,29 +28,6 @@ const sketches = [
   }
 ]
 
-class Sketch extends Component {
-  render() {
-    return (
-      <div>
-        <p>
-          <a href={ this.props.sketch.href }>
-            { this.props.sketch.title }
-          </a>
-        </p>
-        {this.props.sketch.type !== "vimeo" ?
-        (
-          <img src={ this.props.sketch.src } height="30%" width="30%"/>
-        )
-        :
-        (
-          <iframe src={ this.props.sketch.src } height="30%" width="30%"/>
-        )
-      }
-      </div>
-    )
-  }
-}
-
 export default class NickDigital extends Component {
   constructor() {
     super();
@@ -62,7 +39,28 @@ export default class NickDigital extends Component {
   renderSketches() {
     return sketches.map( (sketch, index) => {
       return(
-        <Sketch sketch={ sketch } key={ index }/>
+        <div key={ sketch.index }>
+          <p>
+            { sketch.title }
+            <a href={ sketch.href }>
+              {sketch.type === 'vimeo'? (
+                <iframe
+                  src={ sketch.src }
+                  width={ this.props.iframeSize.width }
+                  height={ this.props.iframeSize.height}
+                  frameBorder="0"
+                  webkitAllowFullScreen
+                  mozAllowFullScreen
+                  allowFullScreen
+                />
+              ) :
+              (
+                <img src={sketch.src} width="40%" height="40%"/>
+              )
+              }
+            </a>
+          </p>
+        </div>
       )
     })
   }

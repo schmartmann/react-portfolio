@@ -62,9 +62,8 @@ body {
 
 #home #nav {
   list-style: none;
-  text-transform: uppercase;
   text-align: center;
-  font-family: "Alegreya";
+  font-family: 'UnifrakturMaguntia';
 }
 
 #home #nav div {
@@ -192,15 +191,20 @@ body {
 }
 
 .writing .work div p {
-  width: 100%;
-  position: relative;
-  left: 0%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   text-transform: none;
 }
+
 
 .writing .work div p a {
   text-decoration: none;
   color: black;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .writing .work div p:hover {

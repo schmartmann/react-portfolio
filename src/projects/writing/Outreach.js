@@ -55,8 +55,8 @@ class Episode extends Component {
           { this.state.show? (
             <a href={ this.props.episode.directLink }>
               <iframe src={ this.props.episode.iframeLink }
-                width="70%"
-                height="100%"
+                width={ this.props.iframeSize.width }
+                height={ this.props.iframeSize.height }
                 frameBorder="0"
                 webkitAllowFullScreen
                 mozAllowFullScreen
@@ -84,7 +84,7 @@ export default class Outreach extends Component {
   episodeList(){
     return episodesList.map( episode => {
       return(
-        <Episode episode={ episode } key={ episode.episode }/>
+        <Episode episode={ episode } key={ episode.episode } iframeSize={ this.props.iframeSize }/>
       )
     })
   }
