@@ -6,7 +6,6 @@ import App from './App';
 import Writing from './Writing';
 import Code from './Code';
 import About from './About';
-import Resume from './Resume';
 import Contact from './Contact';
 import Home from './Home';
 import Splash from './Splash';
@@ -21,7 +20,6 @@ ReactDOM.render((
       <Route path="/writing" component={ Writing } />
       <Route path="/code" component={ Code } />
       <Route path="/about" component={ About } />
-      <Route path="/resume" component={ Resume } />
       <Route path="/contact" component={ Contact } />
     </Route>
   </Router>

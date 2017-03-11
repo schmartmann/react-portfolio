@@ -22,11 +22,6 @@ export default class Home extends Component {
             </Link>
           </div>
           <div>
-            <Link to="/resume">
-              <li>Resume</li>
-            </Link>
-          </div>
-          <div>
               <Link to="/contact">
                 <li>Contact</li>
               </Link>

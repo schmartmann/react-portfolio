@@ -148,6 +148,16 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
+  font-family: "Alegreya";
+}
+
+.projects .project p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.projects .project div p:hover {
+  text-decoration: none;
 }
 
 .projects .project a {
