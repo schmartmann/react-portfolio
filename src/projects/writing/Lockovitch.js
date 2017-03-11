@@ -25,8 +25,8 @@ export default class extends Component {
               </p>
               <iframe
                 src="https://player.vimeo.com/video/193212724"
-                width="320"
-                height="180"
+                width="70%"
+                height="100%"
                 frameBorder="0"
                 webkitAllowFullScreen
                 mozAllowFullScreen

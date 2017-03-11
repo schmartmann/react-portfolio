@@ -55,8 +55,8 @@ class Episode extends Component {
           { this.state.show? (
             <a href={ this.props.episode.directLink }>
               <iframe src={ this.props.episode.iframeLink }
-                width="30%"
-                height="20%"
+                width="70%"
+                height="100%"
                 frameBorder="0"
                 webkitAllowFullScreen
                 mozAllowFullScreen
@@ -95,11 +95,13 @@ export default class Outreach extends Component {
           The Outreach.
         </p>
         { this.state.show? (
+        <div>
           <p>
             A webseries about street fundraisers,
             aka clipboard kids, <br/> that picks up after you
             blow them off.
           </p>
+        </div>
         ) :  ''}
         { this.state.show? this.episodeList() : '' }
       </div>

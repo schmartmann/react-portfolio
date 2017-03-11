@@ -1,20 +1,30 @@
+
+@font-face {
+  font-family: "Alegreya";
+  src: url('../public/fonts/Alegreya-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'UnifrakturMaguntia';
+  src: url('../public/fonts/UnifrakturMaguntia-Book.ttf') format("truetype");
+}
+
 body {
-  font-family: 'Alegreya', serif;
   background: #349884;
+  font-family: 'Alegreya';
 }
 /* splash and home styling */
 
 #splash {
-  width: 48%;
-  height: 100%;
-  margin: 10% auto;
-  color: white;
-  font-size: 26px;
+  width: 50%;
+  height: 7.5em;
+  margin: 2% auto;
+  font-size: 56px;
   font-weight: 800;
   border: 2px solid black;
-  text-shadow: 2px 2px black;
   position: relative;
   z-index: 1;
+  font-family: 'UnifrakturMaguntia';
 }
 
 #splash::before {
@@ -24,17 +34,22 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.9;
+  opacity: 1;
   z-index: -1;
   background: url('../public/img/plaguedoc.png');
   background-position: 10% auto;
-  min-width: 2em;
-  background-size: 100%;
+  background-size: 155%;
   background-repeat: no-repeat;
 }
 
 #splash p {
-  margin: 12% auto;
+  margin: 5% auto;
+  color: #E64E5D;
+  text-shadow: 2px 2px black;
+}
+
+#splash:hover {
+  cursor: pointer;
 }
 
 #splash,
@@ -49,6 +64,7 @@ body {
   list-style: none;
   text-transform: uppercase;
   text-align: center;
+  font-family: "Alegreya";
 }
 
 #home #nav div {
@@ -66,7 +82,6 @@ body {
   background: url('../public/img/trepanning.png');
   background-size: 100%;
   background-repeat: no-repeat;
-  opacity: 0.9;
   z-index: -1;
   position: absolute;
   top: 0;
@@ -81,7 +96,7 @@ body {
 
 #home #nav a {
   text-decoration: none;
-  color: black;
+  color: #E64E5D;
 }
 
 #home #nav a li {
@@ -94,7 +109,7 @@ body {
 }
 
 #home #nav a:visited {
-  color: black;
+  color: #E64E5D;
 }
 
 /* Back button component*/
@@ -103,6 +118,8 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  text-transform: uppercase;
+  font-family: "Alegreya";
 }
 
 .back ul li {
@@ -153,6 +170,8 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  font-family: "Alegreya";
+  /*background: rgb(255, 222, 141);*/
 }
 
 .writing div p:hover {
@@ -168,15 +187,24 @@ body {
   align-items: center;
 }
 
+.writing .work p {
+  text-transform: uppercase;
+}
+
 .writing .work div p {
-  width: 40%;
+  width: 100%;
   position: relative;
-  left: -4%;
+  left: 0%;
+  text-transform: none;
 }
 
 .writing .work div p a {
   text-decoration: none;
   color: black;
+}
+
+.writing .work div p:hover {
+  text-decoration: underline;
 }
 
 /* animation */
