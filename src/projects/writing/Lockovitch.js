@@ -11,7 +11,8 @@ export default class extends Component {
   render() {
     return(
       <div className="work">
-        <p onClick={ () => this.toggleShow() }>
+        <p onClick={ () => this.toggleShow() }
+          className={ this.state.show? 'active' : ''}>
           Erin Lockovitch.
         </p>
         { this.state.show?

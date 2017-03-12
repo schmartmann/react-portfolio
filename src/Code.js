@@ -5,7 +5,7 @@ import ImageLoader from 'react-imageloader';
 const projects = [
   {
     title: 'Now You Know PR',
-    description: 'React + Redux / Rails app. Search music publications and bloggers and organize them into campaigns for DIY music publicity.',
+    description: `React + Redux / Rails app. Search music publications and bloggers and organize them into campaigns for DIY music publicity.`,
     href: 'http://www.nowyouknowpr.com',
     src: 'img/nyk.png'
   },
@@ -37,7 +37,8 @@ class Project extends Component {
     }
     return(
       <div className="project">
-        <p onClick={ () => this.toggleShow() }>
+        <p onClick={ () => this.toggleShow() }
+          className={this.state.show? 'active' : ''}>
           { this.props.data.title }
         </p>
         {

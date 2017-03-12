@@ -151,11 +151,25 @@ body {
   font-family: "Alegreya";
 }
 
+.projects .project p {
+  text-transform: uppercase;
+}
+
 .projects .project p:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
+.active {
+  background: #E64E5D;
+  width: 10em;
+  text-align: center;
+}
+
+.projects .project div p {
+  text-decoration: none;
+  text-transform: none;
+}
 .projects .project div p:hover {
   text-decoration: none;
 }

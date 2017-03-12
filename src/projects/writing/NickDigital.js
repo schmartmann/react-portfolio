@@ -67,7 +67,8 @@ export default class NickDigital extends Component {
   render() {
     return(
       <div className="work">
-        <p onClick={ () => this.toggleShow() }>
+        <p onClick={ () => this.toggleShow() }
+          className={ this.state.show? 'active' : ''}>
           Nick.com Sketches.
         </p>
         { this.state.show? this.renderSketches() : '' }

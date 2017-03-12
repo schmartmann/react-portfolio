@@ -91,7 +91,8 @@ export default class Outreach extends Component {
   render() {
     return(
       <div className="work">
-        <p onClick={() => this.toggleList()}>
+        <p onClick={() => this.toggleList()}
+          className={ this.state.show? 'active' : ''}>
           The Outreach.
         </p>
         { this.state.show? (
