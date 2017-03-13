@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router'
 
 export default class Home extends Component {
+  componentDidMount(){
+    var body = document.querySelector('body');
+    body.className = ''
+  }
   render() {
     return(
       <div>

@@ -9,6 +9,10 @@ export default class Splash extends Component {
   toggleShow() {
     this.setState({ show: !this.state.show });
   }
+  componentDidMount(){
+    var body = document.querySelector('body');
+    body.className = ''
+  }
   render() {
     return(
       <div>

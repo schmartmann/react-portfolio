@@ -13,6 +13,33 @@ body {
   background: #349884;
   font-family: 'Alegreya';
 }
+
+.writingRoute {
+  background: #ffde8d;
+  font-size: 1.25em;
+  color: #064273;
+}
+
+.codeRoute {
+  background: #E4939E;
+  color: #40FFE6;
+  font-size: 1.25em;
+}
+
+.aboutRoute {
+  color: #CFE1B2;
+  background: #5771B2;
+  font-size: 1.25em;
+  font-family: 'Alegreya';
+}
+
+.contactRoute {
+  color: white;
+  background: black;
+  font-size: 1.25em;
+  font-family: 'Alegreya';
+}
+
 /* splash and home styling */
 
 #splash {
@@ -99,11 +126,8 @@ body {
 }
 
 #home #nav a li {
-  position: absolute;
-  text-align: center;
+  margin-top: 40%;
   font-size: 46px;
-  top: 40%;
-  left: 5%;
   text-shadow: 2px 2px white;
 }
 
@@ -117,18 +141,19 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
   text-transform: uppercase;
   font-family: "Alegreya";
 }
 
 .back ul li {
   list-style: none;
-  margin-left: -50%;
+  margin-left: -40%;
 }
 
 .back ul li a:visited,
 .back ul li a {
-  color: black;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -224,7 +249,7 @@ body {
 
 .writing .work div p a {
   text-decoration: none;
-  color: black;
+  color: inherit;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -234,6 +259,49 @@ body {
 .writing .work div p:hover {
   text-decoration: underline;
 }
+
+/* about */
+#about ul {
+  text-align: center;
+}
+
+#about li {
+  list-style: none;
+  margin: 15% auto;
+}
+
+/*contact page*/
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-left: 5%;
+}
+
+#contact ul > li {
+  list-style: none;
+}
+
+#contact ul > li > a > img {
+  margin-top: 50%;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+.icon:hover {
+  zoom: 1.25;
+}
+
 
 /* animation */
 

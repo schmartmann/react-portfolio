@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import Back from './Back';
 
 export default class Contact extends Component {
+  componentDidMount() {
+    var body = document.querySelector('body');
+    body.className += 'contactRoute'
+  }
   render() {
     return(
       <div id="contact">

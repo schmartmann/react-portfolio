@@ -67,9 +67,13 @@ class Project extends Component {
 }
 export default class Code extends Component {
   renderProjects() {
-    return projects.map( project => {
-      return <Project data={project}/>
+    return projects.map( (project, i) => {
+      return <Project data={project} key={ i } />
     })
+  }
+  componentDidMount() {
+    var body = document.querySelector('body');
+    body.className += 'codeRoute'
   }
   render(){
     return(
@@ -77,6 +81,7 @@ export default class Code extends Component {
         <div>
           <Back/>
           <div className="projects">
+            <p>Recent Projects: </p>
             { this.renderProjects() }
           </div>
         </div>

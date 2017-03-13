@@ -18,7 +18,7 @@ ReactDOM.render((
     <Route path="/" component={ App }>
       <IndexRoute component={ Splash }/>
       <Route path="/writing" component={ Writing } />
-      <Route path="/code" component={ Code } />
+      <Route path="/code" component={ Code }/>
       <Route path="/about" component={ About } />
       <Route path="/contact" component={ Contact } />
     </Route>

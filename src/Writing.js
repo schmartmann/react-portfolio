@@ -5,6 +5,10 @@ import Outreach from './projects/writing/Outreach';
 import NickDigital from './projects/writing/NickDigital';
 
 export default class Writing extends Component {
+  componentDidMount() {
+    var body = document.querySelector('body');
+    body.className += 'writingRoute'
+  }
   render(){
     const iframeSize = {height: '100%', width: '100%'}
     return(
