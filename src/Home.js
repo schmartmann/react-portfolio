@@ -10,26 +10,26 @@ export default class Home extends Component {
     return(
       <div>
         <ul id="nav">
-          <div>
-            <Link to="/writing">
-              <li>Writing</li>
-            </Link>
-          </div>
-          <div>
-            <Link to="/code">
-              <li>Code</li>
-            </Link>
-          </div>
-          <div>
-            <Link to="/about">
-              <li>About</li>
-            </Link>
-          </div>
-          <div>
-              <Link to="/contact">
+          <Link to="/writing">
+            <div>
+                <li>Writing</li>
+            </div>
+          </Link>
+          <Link to="/code">
+            <div>
+                <li>Code</li>
+            </div>
+          </Link>
+          <Link to="/about">
+            <div>
+                <li>About</li>
+            </div>
+          </Link>
+          <Link to="/contact">
+            <div>
                 <li>Contact</li>
-              </Link>
-          </div>
+            </div>
+          </Link>
         </ul>
       </div>
     )
