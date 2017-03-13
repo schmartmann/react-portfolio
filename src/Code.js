@@ -12,7 +12,7 @@ const projects = [
   {
     title: 'peTinder',
     description: 'ReactJS + Redux & Rails app that geolocates users and finds adoptable pets via the Petfinder API.',
-    href: 'http://petinder_react.pet-tinder.com/',
+    href: 'http://www.pet-tinder.com/',
     src: 'img/petinder.png'
   },
   {
