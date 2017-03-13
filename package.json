@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "history": "^4.6.0",
     "react-addons-css-transition-group": "^15.4.2",
     "react-cookie": "^1.0.4",
     "react-imageloader": "^2.1.0",
