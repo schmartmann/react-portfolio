@@ -9,7 +9,7 @@ export default class Home extends Component {
   render() {
     return(
       <div>
-        <ul id="nav">
+        <div id="nav">
           <Link to="/writing">
             <div>
                 <li>Writing</li>
@@ -30,7 +30,7 @@ export default class Home extends Component {
                 <li>Contact</li>
             </div>
           </Link>
-        </ul>
+        </div>
       </div>
     )
   }
