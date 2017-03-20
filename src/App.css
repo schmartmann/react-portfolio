@@ -317,3 +317,19 @@ body {
     transform:rotate(-360deg);
   }
 }
+
+@media (max-width: 667px) {
+  #splash p {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 568px) {
+  #splash {
+    height: 6.5em;
+  }
+
+  #splash p {
+    font-size: 40px;
+  }
+}
