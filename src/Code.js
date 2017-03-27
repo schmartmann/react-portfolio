@@ -73,7 +73,7 @@ export default class Code extends Component {
   }
   componentDidMount() {
     var body = document.querySelector('body');
-    body.className += 'codeRoute'
+    body.className = 'codeRoute'
   }
   render(){
     return(

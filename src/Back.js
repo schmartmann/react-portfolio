@@ -5,9 +5,7 @@ export default class Back extends Component {
   render(){
     return(
       <div className="back">
-        <ul>
-          <li><Link to="/">Back.</Link></li>
-        </ul>
+        <Link to="/">Back.</Link>
       </div>
     )
   }

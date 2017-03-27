@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Back from './Back';
+import { Link } from 'react-router'
 
 
 export default class About extends Component {
@@ -11,20 +12,18 @@ export default class About extends Component {
     return(
       <div id="about">
         <Back/>
-        <ul>
-          <li>
-            I'm a web developer.
-          </li>
-          <li>
-            I'm a writer.
-          </li>
-          <li>
+          <p>
+            I'm a <Link to="/code">web developer.</Link>
+          </p>
+          <p>
+            I'm a <Link to="/writing">writer.</Link>
+          </p>
+          <p>
             I have a genetic defect where sunlight makes me sneeze.
-          </li>
-          <li>
+          </p>
+          <p>
             Okay thanks bye.
-          </li>
-        </ul>
+          </p>
       </div>
     )
   }

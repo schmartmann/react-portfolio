@@ -144,20 +144,17 @@ body {
   align-items: center;
   text-transform: uppercase;
   font-family: "Alegreya";
+  width: 10%;
+  margin: 2% auto;
 }
 
-.back ul li {
-  list-style: none;
-  margin-left: -40%;
-}
-
-.back ul li a:visited,
-.back ul li a {
+.back a:visited,
+.back a {
   color: inherit;
   text-decoration: none;
 }
 
-.back ul li a:hover {
+.back a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -217,9 +214,9 @@ body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  align-content: center;
   align-items: center;
   font-family: "Alegreya";
-  /*background: rgb(255, 222, 141);*/
 }
 
 .writing div p:hover {
@@ -261,13 +258,15 @@ body {
 }
 
 /* about */
-#about ul {
+#about p {
   text-align: center;
+  margin: 5% auto;
 }
 
-#about li {
-  list-style: none;
-  margin: 10% auto;
+#about a,
+#about a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*contact page*/
@@ -282,26 +281,24 @@ body {
 }
 
 #contact h2 {
-  margin-left: 5%;
+  text-align: center;
 }
 
-#contact ul > li {
-  list-style: none;
+.projects-list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
 }
 
-#contact ul > li > a > img {
-  margin-top: 50%;
+.projects-list a {
+  margin: 20% auto;
 }
 
-.icon {
-  height: 50px;
-  width: 50px;
+.projects-list img {
+  width: 5em;
 }
-
-.icon:hover {
-  zoom: 1.25;
-}
-
 
 /* animation */
 
