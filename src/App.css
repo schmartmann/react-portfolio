@@ -315,6 +315,12 @@ body {
   }
 }
 
+@media (max-width: 2000px) {
+  #splash {
+    height: 100%;
+  }
+}
+
 @media (max-width: 667px) {
   #splash p {
     font-size: 46px;
