@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Back from './Back';
+import Portrait from './Portrait';
 import { Link } from 'react-router'
-
 
 export default class About extends Component {
   componentDidMount() {
@@ -24,6 +24,7 @@ export default class About extends Component {
           <p>
             Okay thanks bye.
           </p>
+          <Portrait/>
       </div>
     )
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Back from './Back';
+import Portrait from './Portrait';
 import ImageLoader from 'react-imageloader';
 
 const projects = [
@@ -83,6 +84,7 @@ export default class Code extends Component {
           <div className="projects">
             <p>Recent Projects: </p>
             { this.renderProjects() }
+            <Portrait/>
           </div>
         </div>
       </div>

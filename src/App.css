@@ -63,9 +63,9 @@ body {
   height: 100%;
   opacity: 1;
   z-index: -1;
-  background: url('../public/img/plaguedoc.png');
-  background-position: 10% auto;
-  background-size: 155%;
+  background: url('../public/img/portrait2.png');
+  background-position: center;
+  /*background-size: 155%;*/
   background-repeat: no-repeat;
 }
 
@@ -258,6 +258,7 @@ body {
 }
 
 /* about */
+#about div,
 #about p {
   text-align: center;
   margin: 5% auto;
@@ -268,6 +269,27 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
+#portrait {
+  background: url('../public/img/portrait2_transparent_bkg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 12em;
+  height: 14em;
+}
+
+
+.spin-left {
+   animation: 0.75s ease-in reverse spin infinite;
+ }
+
+.spin-right {
+   animation: 0.75s ease-in spin infinite;
+ }
+
+ .pause {
+   animation-play-state:paused !important;
+ }
 
 /*contact page*/
 
@@ -302,26 +324,32 @@ body {
 
 /* animation */
 
-.loader {
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  animation: spin 1.25s linear infinite;
-}
-
 @keyframes spin{
   100% {
-    transform:rotate(-360deg);
+    transform:rotate(360deg);
   }
 }
 
 @media (max-width: 2000px) {
   #splash {
-    height: 100%;
+    height: 11em;
+    width: 11em;
+  }
+  #splash::before {
+    background-size: 150%;
   }
 }
 
 @media (max-width: 667px) {
+  #splash {
+    height: 11em;
+    width: 6em;
+  }
+
+  #splash::before {
+    background-size: 270%;
+  }
+
   #splash p {
     font-size: 46px;
   }
@@ -329,7 +357,12 @@ body {
 
 @media (max-width: 568px) {
   #splash {
-    height: 6.5em;
+    height: 12em;
+    width: 6em;
+  }
+
+  #splash::before {
+    background-size: 270%;
   }
 
   #splash p {

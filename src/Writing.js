@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Back from './Back';
+import Portrait from './Portrait';
 import Lockovitch from './projects/writing/Lockovitch';
 import Outreach from './projects/writing/Outreach';
 import NickDigital from './projects/writing/NickDigital';
@@ -20,9 +21,11 @@ export default class Writing extends Component {
             <p><Lockovitch iframeSize={ iframeSize } /></p>
             <p><Outreach iframeSize={ iframeSize } /></p>
             <p><NickDigital iframeSize={ iframeSize } /></p>
+            <Portrait/>
           </div>
         </div>
       </div>
     )
   }
+
 }
