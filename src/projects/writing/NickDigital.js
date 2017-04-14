@@ -42,7 +42,7 @@ export default class NickDigital extends Component {
         <div key={ sketch.index }>
           <p>
             { sketch.title }
-            <a href={ sketch.href }>
+            <a href={ sketch.href } target="_blank">
               {sketch.type === 'vimeo'? (
                 <iframe
                   src={ sketch.src }
