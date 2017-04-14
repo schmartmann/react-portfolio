@@ -1,4 +1,4 @@
-### -___-*###
+### -___-*
 
 This is the React app powering my portfolio. You can see it in action [here](http://www.schmartmann.com).
 
