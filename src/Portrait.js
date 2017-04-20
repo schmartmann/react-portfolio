@@ -7,15 +7,30 @@ export default class Portrait extends Component {
       class: null
     }
   }
-  startHover() {
-    let direction = '';
-    let rand = Math.floor(Math.random() * 100);
-    if ( rand > 50) {
-      direction = "left"
+  randDir(){
+    let randNum = Math.floor(Math.random() * 10);
+    let str;
+    if (randNum > 5){
+      str = "spin-left";
     } else {
-      direction = "right"
-    };
-    this.setState({class: `spin-${direction}`})
+      str = "spin-right"; 
+    }
+    return str
+  }
+  startHover() {
+    switch(this.state.class){
+      case "spin-left pause" || "spin-left": 
+        this.setState({class: "spin-right"});
+        break;
+      case "spin-right pause"  || "spin-right":
+        this.setState({class: "spin-left"});
+        break;
+      case null: 
+        this.setState({class: this.randDir()})
+        break;
+      default: 
+        this.setState({class: this.randDir()})
+    }
   }
   stopHover() {
     let direction = this.state.class;
