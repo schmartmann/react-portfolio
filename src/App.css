@@ -189,6 +189,7 @@ body {
 }
 
 .projects .project div p {
+  width: 80%;
   text-decoration: none;
   text-transform: none;
 }
@@ -234,6 +235,10 @@ body {
 
 .writing .work p {
   text-transform: uppercase;
+}
+
+.writing .work div .title {
+  width: 100%
 }
 
 .writing .work div p {
@@ -367,5 +372,10 @@ body {
 
   #splash p {
     font-size: 40px;
+  }
+
+  .writing .work div p {
+    width: 90%;
+    text-align: center; 
   }
 }

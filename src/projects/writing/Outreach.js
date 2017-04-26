@@ -3,37 +3,37 @@ import React, { Component } from 'react';
 const episodesList = [
   {
     episode: 1,
-    title: 'Episode 1: Rational Self Interest',
+    title: 'Ep.1: Rational Self Interest',
     directLink: 'https://vimeo.com/100330760',
     iframeLink: 'https://player.vimeo.com/video/100330760'
   },
   {
     episode: 2,
-    title: 'Episode 2: The Invisible Fist of the Free Market',
+    title: 'Ep. 2: The Invisible Fist of the Free Market',
     directLink: 'https://vimeo.com/127560550',
     iframeLink: 'https://player.vimeo.com/video/127560550'
   },
   {
     episode: 3,
-    title: 'Episode 3: Snitches Get Riches',
+    title: 'Ep. 3: Snitches Get Riches',
     directLink: 'https://vimeo.com/128115773',
     iframeLink: 'https://player.vimeo.com/video/128115773'
   },
   {
     episode: 4,
-    title: 'Episode 4: Warriors of Change',
+    title: 'Ep. 4: Warriors of Change',
     directLink: 'https://vimeo.com/128847620',
     iframeLink: 'https://player.vimeo.com/video/128847620'
   },
   {
     episode: 5,
-    title: 'Episode 5: Smiles for Stephanie',
+    title: 'Ep. 5: Smiles for Stephanie',
     directLink: 'https://vimeo.com/129744952',
     iframeLink: 'https://player.vimeo.com/video/129744952'
   },
   {
     episode: 6,
-    title: 'Episode 6: A Rocketship Ride to the Top',
+    title: 'Ep. 6: A Rocketship Ride to the Top',
     directLink: 'https://vimeo.com/130559203',
     iframeLink: 'https://player.vimeo.com/video/130559203'
   }
@@ -50,7 +50,8 @@ class Episode extends Component {
   render() {
     return (
       <div>
-        <p onClick={ () => this.toggleShow() }>
+        <p className="title" 
+          onClick={ () => this.toggleShow() }>
           { this.props.episode.title }
           { this.state.show? (
             <a href={ this.props.episode.directLink }>
@@ -98,8 +99,7 @@ export default class Outreach extends Component {
         { this.state.show? (
         <div>
           <p>
-            A webseries about street fundraisers,
-            aka clipboard kids, <br/> that picks up after you
+            A series about street fundraisers that picks up after you
             blow them off.
           </p>
         </div>
