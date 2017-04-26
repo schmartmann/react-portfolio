@@ -5,6 +5,12 @@ import ImageLoader from 'react-imageloader';
 
 const projects = [
   {
+    title: "Markup Masker", 
+    description: "Ruby Gem that takes in a string polluted with HTML or JavaScript, and uses regexs to break separate out unwanted markup",
+    href: "https://github.com/schmartmann/markup_mask",
+    src: "https://media.giphy.com/media/8UdbDVaUtYNhK/giphy.gif"
+  },
+  {
     title: 'Sinatra Turntable', 
     description: 'Bash script that bootstraps a Sinatra app with an ActiveRecord database',
     href: 'https://github.com/schmartmann/sinatra_turntable',
