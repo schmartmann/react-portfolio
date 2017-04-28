@@ -18,9 +18,9 @@ export default class Writing extends Component {
           <Back/>
           <div className="writing">
             <p>Recent work:</p>
-            <p><Lockovitch iframeSize={ iframeSize } /></p>
-            <p><Outreach iframeSize={ iframeSize } /></p>
-            <p><NickDigital iframeSize={ iframeSize } /></p>
+            <Lockovitch iframeSize={ iframeSize } />
+            <Outreach iframeSize={ iframeSize } />
+            <NickDigital iframeSize={ iframeSize } />
             <Portrait/>
           </div>
         </div>
