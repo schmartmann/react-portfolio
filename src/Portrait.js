@@ -4,7 +4,7 @@ export default class Portrait extends Component {
   constructor() {
     super();
     this.state = {
-      class: null
+      class: "spin-left pause" 
     }
   }
   randDir(){
@@ -41,6 +41,9 @@ export default class Portrait extends Component {
       <div id="portrait"
         onMouseOver={() => this.startHover()}
         onMouseLeave={() => this.stopHover()}
+        onTouchStart={() => this.startHover()}
+        onTouchEnd={() => this.stopHover()}
+        onTouchCancel={() => this.stopHover()}
         className={this.state.class}/>
     )
   }
