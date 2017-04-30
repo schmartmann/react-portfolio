@@ -53,20 +53,17 @@ class Episode extends Component {
         <p className="title" 
           onClick={ () => this.toggleShow() }>
           { this.props.episode.title }
+        </p>
           { this.state.show? (
             <a href={ this.props.episode.directLink }>
               <iframe src={ this.props.episode.iframeLink }
                 width={ this.props.iframeSize.width }
                 height={ this.props.iframeSize.height }
                 frameBorder="0"
-                webkitAllowFullScreen
-                mozAllowFullScreen
-                allowFullScreen
               />
             </a>
           ) : ''
           }
-        </p>
       </div>
     )
   }

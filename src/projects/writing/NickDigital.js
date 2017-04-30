@@ -39,9 +39,10 @@ export default class NickDigital extends Component {
   renderSketches() {
     return sketches.map( (sketch, index) => {
       return(
-        <div key={ sketch.index }>
+        <div key={ sketch.index  }>
           <p>
             { sketch.title }
+          </p>
             <a href={ sketch.href } target="_blank">
               {sketch.type === 'vimeo'? (
                 <iframe
@@ -49,9 +50,6 @@ export default class NickDigital extends Component {
                   width={ this.props.iframeSize.width }
                   height={ this.props.iframeSize.height}
                   frameBorder="0"
-                  webkitAllowFullScreen
-                  mozAllowFullScreen
-                  allowFullScreen
                 />
               ) :
               (
@@ -59,7 +57,6 @@ export default class NickDigital extends Component {
               )
               }
             </a>
-          </p>
         </div>
       )
     })

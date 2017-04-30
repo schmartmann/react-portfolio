@@ -58,7 +58,7 @@ class Project extends Component {
           this.state.show?
           (
             <div>
-              <p>
+              <p className="title">
                 { this.props.data.description }
               </p>
               <a href={ this.props.data.href }>

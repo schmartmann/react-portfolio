@@ -262,6 +262,13 @@ body {
   text-decoration: underline;
 }
 
+.writing .work div a {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+
 /* about */
 #about div,
 #about p {
