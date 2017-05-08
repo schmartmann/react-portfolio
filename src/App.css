@@ -197,6 +197,11 @@ body {
   text-decoration: none;
 }
 
+.projects .project div .title {
+  max-width: 60%;
+  min-width: 50%;
+}
+
 .projects .project a {
   display: flex;
   flex-flow: column nowrap;
