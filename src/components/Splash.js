@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Home from './Home';
+import { Link } from 'react-router'
 import '../stylesheets/Splash.css';
 
 
@@ -8,7 +8,11 @@ export default class Splash extends Component {
     return(
       <div>
         <div id="home">
-          <Home/>
+          <div id="splash">
+            <p>stefan:</p>
+            <p>developer.</p>
+            <p>writer.</p>
+          </div>
         </div>
       </div>
     )

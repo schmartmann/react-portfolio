@@ -6,10 +6,6 @@ import '../stylesheets/About.css';
 
 
 export default class About extends Component {
-  componentDidMount() {
-    var body = document.querySelector('body');
-    body.className += 'aboutRoute'
-  }
   render() {
     return(
       <div id="about">

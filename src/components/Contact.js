@@ -4,10 +4,6 @@ import Portrait from './Portrait';
 import '../stylesheets/Contact.css';
 
 export default class Contact extends Component {
-  componentDidMount() {
-    var body = document.querySelector('body');
-    body.className += 'contactRoute'
-  }
   render() {
     return(
       <div id="contact">

@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
+import Splash from './Splash';
 import '../stylesheets/Home.css';
 
 
 export default class Home extends Component {
-  componentDidMount(){
-    var body = document.querySelector('body');
-    body.className = '';
+  componentWillMount() {
+    debugger
   }
   render() {
     return(
       <div>
+        <Splash/>
         <div id="nav">
           <Link to="/writing">
             <div>
