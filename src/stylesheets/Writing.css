@@ -1,0 +1,62 @@
+body {
+  background: #ffde8d;
+  font-size: 1.25em;
+  color: #064273;
+}
+
+.writing {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: "Alegreya";
+}
+
+.writing div p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.writing .work,
+.writing .work div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.writing .work p {
+  text-transform: uppercase;
+}
+
+.writing .work div .title {
+  width: 100%
+}
+
+.writing .work div p {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-transform: none;
+}
+
+
+.writing .work div p a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.writing .work div p:hover {
+  text-decoration: underline;
+}
+
+.writing .work div a {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}

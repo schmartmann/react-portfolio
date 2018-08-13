@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Back from './Back';
 import Portrait from './Portrait';
 import { Link } from 'react-router'
+import '../stylesheets/About.css';
+
 
 export default class About extends Component {
   componentDidMount() {

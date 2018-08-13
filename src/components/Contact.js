@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Back from './Back';
 import Portrait from './Portrait';
+import '../stylesheets/Contact.css';
 
 export default class Contact extends Component {
   componentDidMount() {

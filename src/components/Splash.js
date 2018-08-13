@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import Home from './Home';
+import '../stylesheets/Splash.css';
+
 
 export default class Splash extends Component {
-  componentDidMount(){
-    var body = document.querySelector('body');
-    body.className = '';
-  }
   render() {
     return(
       <div>

@@ -1,0 +1,35 @@
+body {
+  color: white;
+  background: black;
+  font-size: 1.25em;
+  font-family: 'Alegreya';
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+.projects-list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+}
+
+.projects-list a {
+  margin: 20% auto;
+}
+
+.projects-list img {
+  width: 5em;
+}

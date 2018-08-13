@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import '../stylesheets/App.css';
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super();
     this.state = { show: false }
   }
@@ -11,13 +11,12 @@ class App extends Component {
     this.setState({ show: !this.state.show });
   }
   render() {
-    if (!this.state.show){
+    if ( !this.state.show ) {
       return (
-        <div id="splash" onClick={ () => this.toggleShow()}>
+        <div id="splash" onClick={ () => this.toggleShow() }>
           <p>stefan:</p>
-          <p>writer.</p>
           <p>developer.</p>
-          <p>ugh.</p>
+          <p>writer.</p>
         </div>
       )
     } else {
