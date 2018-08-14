@@ -1,3 +1,8 @@
+body {
+  font-family: 'Alegreya';
+  font-size: 1.25em;
+}
+
 @font-face {
   font-family: "Alegreya";
   src: url('../../public/fonts/Alegreya-Regular.ttf') format("truetype");
@@ -6,11 +11,6 @@
 @font-face {
   font-family: 'UnifrakturMaguntia';
   src: url('../../public/fonts/UnifrakturMaguntia-Book.ttf') format("truetype");
-}
-
-body {
-  background: #349884;
-  font-family: 'Alegreya';
 }
 
 @media (max-width: 2000px) {

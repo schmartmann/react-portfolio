@@ -3,11 +3,7 @@ import { Link } from 'react-router'
 import Splash from './Splash';
 import '../stylesheets/Home.css';
 
-
 export default class Home extends Component {
-  componentWillMount() {
-    debugger
-  }
   render() {
     return(
       <div>
