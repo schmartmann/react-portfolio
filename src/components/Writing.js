@@ -5,8 +5,13 @@ import Lockovitch from './projects/writing/Lockovitch';
 import Outreach from './projects/writing/Outreach';
 import NickDigital from './projects/writing/NickDigital';
 import '../stylesheets/Writing.css';
+import setColorScheme from './colorScheme';
 
 export default class Writing extends Component {
+  componentWillMount() {
+    var path = this.props.location.pathname
+    setColorScheme( path );
+  }
   render() {
     const iframeSize = {
       height: '100%',

@@ -4,7 +4,7 @@ import Portrait from './Portrait';
 import ImageLoader from 'react-imageloader';
 import '../stylesheets/Code.css';
 import * as projects from './projects/code/Projects';
-import * as styles from './Background';
+import setColorScheme from './colorScheme';
 
 class Project extends Component {
   constructor(props) {
@@ -55,10 +55,8 @@ export default class Code extends Component {
     })
   }
   componentWillMount() {
-    var colorSchemes = styles.colorSchemes;
     var path = this.props.location.pathname
-    document.body.style.background = colorSchemes[ path ].background;
-    document.body.style.color = colorSchemes[ path ].color;
+    setColorScheme( path );
   }
   render(){
     return(

@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router'
 import Splash from './Splash';
 import '../stylesheets/Home.css';
+import setColorScheme from './colorScheme';
 
 export default class Home extends Component {
+  componentWillMount() {
+    var path = this.props.location.pathname
+    setColorScheme( path );
+  }
   render() {
     return(
       <div>

@@ -3,9 +3,14 @@ import Back from './Back';
 import Portrait from './Portrait';
 import { Link } from 'react-router'
 import '../stylesheets/About.css';
+import setColorScheme from './colorScheme';
 
 
 export default class About extends Component {
+  componentWillMount() {
+    var path = this.props.location.pathname
+    setColorScheme( path );
+  }
   render() {
     return(
       <div id="about">
