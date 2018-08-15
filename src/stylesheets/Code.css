@@ -1,0 +1,52 @@
+.projects,
+.projects .project,
+.projects .project span,
+.projects .project div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: "Alegreya";
+}
+
+.projects .project p {
+  text-transform: uppercase;
+}
+
+.projects .project p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.active {
+  background: #E64E5D;
+  width: 10em;
+  text-align: center;
+}
+
+.projects .project div p {
+  width: 80%;
+  text-decoration: none;
+  text-transform: none;
+}
+.projects .project div p:hover {
+  text-decoration: none;
+}
+
+.projects .project div .title {
+  max-width: 60%;
+  min-width: 50%;
+}
+
+.projects .project a {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.projects .project a > div > img {
+  max-width: 50%;
+}

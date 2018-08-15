@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import '../stylesheets/Portrait.css';
 
 export default class Portrait extends Component {
   constructor() {
     super();
     this.state = {
-      class: "spin-left pause" 
+      class: "spin-left pause"
     }
   }
   randDir(){
@@ -13,22 +14,22 @@ export default class Portrait extends Component {
     if (randNum > 5){
       str = "spin-left";
     } else {
-      str = "spin-right"; 
+      str = "spin-right";
     }
     return str
   }
   startHover() {
     switch(this.state.class){
-      case "spin-left pause" || "spin-left": 
+      case "spin-left pause" || "spin-left":
         this.setState({class: "spin-right"});
         break;
       case "spin-right pause"  || "spin-right":
         this.setState({class: "spin-left"});
         break;
-      case null: 
+      case null:
         this.setState({class: this.randDir()})
         break;
-      default: 
+      default:
         this.setState({class: this.randDir()})
     }
   }

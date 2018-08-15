@@ -1,0 +1,21 @@
+.back {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Alegreya";
+  width: 10%;
+  margin: 2% auto;
+}
+
+.back a:visited,
+.back a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.back a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

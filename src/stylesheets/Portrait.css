@@ -1,0 +1,21 @@
+@import url( './Animations.css' );
+
+#portrait {
+  background: url('../../public/img/portrait2_transparent_bkg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 12em;
+  height: 14em;
+}
+
+.spin-left {
+   animation: 0.75s ease-in reverse spin infinite;
+ }
+
+.spin-right {
+   animation: 0.75s ease-in spin infinite;
+ }
+
+ .pause {
+   animation-play-state:paused !important;
+ }

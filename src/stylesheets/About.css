@@ -1,0 +1,11 @@
+#about div,
+#about p {
+  text-align: center;
+  margin: 5% auto;
+}
+
+#about a,
+#about a:visited {
+  text-decoration: none;
+  color: inherit;
+}
