@@ -12,7 +12,6 @@ export default class Home extends Component {
   render() {
     return(
       <div>
-        <Splash/>
         <div id="nav">
           <Link to="/writing">
             <div>

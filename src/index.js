@@ -9,14 +9,15 @@ import About from './components/routes/About';
 import Contact from './components/routes/Contact';
 import Home from './components/routes/Home';
 import Splash from './components/routes/Splash';
-// import assignBackground from './components/Background';
 import './index.css';
 
 ReactDOM.render(
   (
     <Router history={ browserHistory } >
       <Route path="/" component={ App }>
-        <IndexRoute component={ Home } />
+        <IndexRoute component={ Splash } />
+          <Route path="/home"
+          component={ Home } />
           <Route path="/writing"
           component={ Writing } />
         <Route path="/code"
