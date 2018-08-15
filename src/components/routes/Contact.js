@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Back from './Back';
-import Portrait from './Portrait';
-import '../stylesheets/Contact.css';
-import setColorScheme from './colorScheme';
+import Back from '../Back';
+import Portrait from '../Portrait';
+import '../../stylesheets/Contact.css';
+import setColorScheme from '../colorScheme';
 
 export default class Contact extends Component {
   componentWillMount() {

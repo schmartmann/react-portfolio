@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Back from './Back';
-import Portrait from './Portrait';
+import Back from '../Back';
+import Portrait from '../Portrait';
 import ImageLoader from 'react-imageloader';
-import '../stylesheets/Code.css';
-import * as projects from './projects/code/Projects';
-import setColorScheme from './colorScheme';
+import '../../stylesheets/Code.css';
+import * as projects from '../projects/code/Projects';
+import setColorScheme from '../colorScheme';
 
 class Project extends Component {
   constructor(props) {

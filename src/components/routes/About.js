@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Back from './Back';
-import Portrait from './Portrait';
+import Back from '../Back';
+import Portrait from '../Portrait';
 import { Link } from 'react-router'
-import '../stylesheets/About.css';
-import setColorScheme from './colorScheme';
+import '../../stylesheets/About.css';
+import setColorScheme from '../colorScheme';
 
 
 export default class About extends Component {
